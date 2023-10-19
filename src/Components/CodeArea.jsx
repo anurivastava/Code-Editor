@@ -68,6 +68,9 @@ const CodeArea = () => {
   return (
     <>
         <div className='code-editor-container'>
+            <div className='heading'>
+                <h1>AS-Code</h1>
+            </div>
             <div className='code-btns'>
                 <Stack spacing={2} direction="row">
                     <Button  variant="contained" size="large" onClick={handelsave}>Save</Button>
