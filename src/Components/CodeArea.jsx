@@ -15,8 +15,6 @@ const CodeArea = () => {
     
     const [value, setValue] = useState('');
 
-    const[lckbtn,setbtn]=useState(1)
-
     const[btn,setlcbtn]=useState(<LockOpenIcon/>)
 
     function handleChange(event) {
@@ -45,16 +43,10 @@ const CodeArea = () => {
        
         if(read===true){
             setread(false)
+            setlcbtn(<LockOpenIcon/>)
         }
         else{
             setread(true)
-        }
-        if(lckbtn===1){
-            setbtn(0)
-            setlcbtn(<LockOpenIcon/>)
-        }
-        else {
-            setbtn(1)
             setlcbtn(<LockIcon/>)
         }
     }
