@@ -2,6 +2,10 @@ import React, { useState,useRef } from 'react'
 import '../Styles/CodeArea.css'
 import Stack from '../../node_modules/@mui/material/Stack';
 import Button from '../../node_modules/@mui/material/Button';
+import LockIcon from '@mui/icons-material/Lock';
+import LockOpenIcon from '@mui/icons-material/LockOpen';
+import SaveIcon from '@mui/icons-material/Save';
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 
 const CodeArea = () => {
 
@@ -10,6 +14,10 @@ const CodeArea = () => {
     const txtarea = useRef();
     
     const [value, setValue] = useState('');
+
+    const[lckbtn,setbtn]=useState(1)
+
+    const[btn,setlcbtn]=useState(<LockOpenIcon/>)
 
     function handleChange(event) {
         setValue(event.target.value);
@@ -20,7 +28,7 @@ const CodeArea = () => {
             alert("Please enter code");
         }
         else{ 
-            console.log('save button')
+           
             const blob = new Blob([txtarea.current.value]);
             const url = URL.createObjectURL(blob);
             const link = document.createElement("a");
@@ -34,17 +42,25 @@ const CodeArea = () => {
     }
 
     const handlelockunclock=()=>{
-        console.log('lock unclock button')
+       
         if(read===true){
             setread(false)
         }
         else{
             setread(true)
         }
+        if(lckbtn===1){
+            setbtn(0)
+            setlcbtn(<LockOpenIcon/>)
+        }
+        else {
+            setbtn(1)
+            setlcbtn(<LockIcon/>)
+        }
     }
 
     const handleCopy=()=>{
-        console.log("Copy button")
+       
         txtarea.current.select();
         navigator.clipboard.writeText(txtarea.current.value);
     }
@@ -73,9 +89,9 @@ const CodeArea = () => {
             </div>
             <div className='code-btns'>
                 <Stack spacing={2} direction="row">
-                    <Button  variant="contained" size="large" onClick={handelsave}>Save</Button>
-                    <Button variant="contained" size="large" onClick={handleCopy}>Copy</Button>
-                    <Button variant="contained" size="large" color="error" onClick={handlelockunclock}>Lock/Unlock</Button>
+                    <Button  variant="contained" size="large" onClick={handelsave}><SaveIcon/></Button>
+                    <Button variant="contained" size="large" onClick={handleCopy}><ContentCopyIcon/></Button>
+                    <Button variant="contained" size="large" color="error" onClick={handlelockunclock}>{btn}</Button>
                 </Stack>
             </div>
             <textarea className="code-container" name="" id="" cols="200" rows="30" readOnly={read} ref={txtarea} onKeyDown={handlekeydown} onChange={handleChange} value={value}/>

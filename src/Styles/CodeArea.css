@@ -9,16 +9,20 @@ html{
 .code-editor-container{
     border: 0.5rem solid white;
     border-radius: 2rem;
-    margin: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     padding: 0;
     display: flex;
     flex-direction: column;
     height: 71rem;
+    width:150.8rem;
     background-color:rgb(116, 119, 122);
     justify-content: center;
 }
 
 .code-container{
+    font-size: large;
     margin: 1rem;
     color: wheat;
     min-width: 148.5rem;
