@@ -25,9 +25,10 @@ html{
     font-size: large;
     margin: 1rem;
     color: wheat;
-    min-width: 148.5rem;
+    resize: none;
+    /* width: 148.5rem; */
     max-width: 148.5rem;
-    min-height: 57rem;
+    /* height: 57rem; */
     max-height: 57rem;
     border: solid black 0.2rem;
     border-radius: 1rem;
