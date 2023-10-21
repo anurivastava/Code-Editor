@@ -59,8 +59,8 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 Contributions are always welcome! If you'd like to contribute, please follow these steps:
 
-1.Fork the repository
-2.Create a new branch for your feature or bug fix
-3.Make your changes and commit them with descriptive commit messages
-4.Push your changes to your fork
-5.Submit a pull request to the original repository
+1.Fork the repository <br>
+2.Create a new branch for your feature or bug fix<br>
+3.Make your changes and commit them with descriptive commit messages<br>
+4.Push your changes to your fork<br>
+5.Submit a pull request to the original repository<br>
