@@ -1,11 +1,11 @@
-*{
-    margin: 0;
+*{              
+    margin: 0;        /*Set Overall margin and padding for all element initiallly*/  
     padding: 0;
 
 }
 
 html{
-    font-size: 62.5%;
+    font-size: 62.5%;     /*Using to express pixels in rems. */
 }
 
 .code-editor-container{
@@ -30,16 +30,14 @@ html{
     color: wheat;
     resize: none;
     width: 148.5rem;
-    /* max-width: 148.5rem; */
     height: 57rem;
-    /* max-height: 57rem; */
     border: solid black 0.2rem;
     border-radius: 1rem;
     background-color:rgb(49, 47, 47);
 }
 
 .code-btns{
-    /* border: red solid 10px; */
+    position: relative;
     display: flex;
     justify-content: center;
     width: 40rem;
@@ -54,7 +52,6 @@ html{
 }
 
 .heading{
-    /* border: black solid 2px; */
     position: relative;
     top: 1rem;
     margin: 1rem;
@@ -63,4 +60,30 @@ html{
     justify-content: center;
     font-size: 2rem;
     color: rgba(32, 41, 163, 0.537);
+}
+
+.save-tooltip,.copy-tooltip,.lock-unlock-tooltip{
+    visibility: hidden;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+}
+.tooltip:hover .save-tooltip{
+    background-color: black;
+    color: white;
+    visibility: visible;
+    z-index: 2;
+}
+
+.tooltip:hover .copy-tooltip{
+    background-color: black;
+    color: white;
+    visibility: visible;
+    z-index: 2;
+}
+
+.tooltip:hover .lock-unlock-tooltip{
+    background-color: black;
+    color: white;
+    visibility: visible;
+    z-index: 2;
 }
