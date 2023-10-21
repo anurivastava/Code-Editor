@@ -3,9 +3,11 @@
     padding: 0;
 
 }
+
 html{
     font-size: 62.5%;
 }
+
 .code-editor-container{
     border: 0.5rem solid white;
     border-radius: 2rem;
@@ -34,7 +36,6 @@ html{
     border: solid black 0.2rem;
     border-radius: 1rem;
     background-color:rgb(49, 47, 47);
-    
 }
 
 .code-btns{

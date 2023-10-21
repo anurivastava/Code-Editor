@@ -1,4 +1,5 @@
-# Getting Started with Create React App
+# This is a react app for code editor 
+Code Editor is a web application built using React that allows users to write code and can perform three functionalities. App has Three Buttons save, copy, lock/unlock. Save button is to save(download) the code; copy button is to copy the code from editor and Lock/unlock button to switch on/off read-only property
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -6,20 +7,36 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `Installation`
+
+To install Code Editor on your local machine, follow these steps:
+
+1.Clone the repository
+    -git clone [https://github.com/anurivastava/Code-Editor.git]
+
+2.Install dependencies using npm install
+    -change directory to the root folder of the app
+    -npm install
+
+3.Start the development server using npm start
+
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The development server will compile your code and start the app. It will also provide you with a local development URL, usually [http://localhost:3000], where you can access the app in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Open your preferred web browser and enter the development URL (e.g., [http://localhost:3000]).
+
+You should now see the Code Editor app running in your browser, ready for you to start editing and running code.
 
 ### `npm test`
 
+You can use npm test to run automated tests that check the functionality and correctness of your code. Here are some ways you can use npm test in this project
+
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
+
+This will create a production-ready version of your app in the build directory, which you can then deploy to a web server or hosting service.
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -27,11 +44,10 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Ejecting from Create React App: When you run npm run eject, Create React App will generate the necessary configuration files and scripts in your project's root directory. This includes configuration files like webpack.config.js, babel.config.js, and others that were previously hidden.
 
 If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
@@ -39,32 +55,12 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### `Contributing`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Contributions are always welcome! If you'd like to contribute, please follow these steps:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1.Fork the repository
+2.Create a new branch for your feature or bug fix
+3.Make your changes and commit them with descriptive commit messages
+4.Push your changes to your fork
+5.Submit a pull request to the original repository
