@@ -63,13 +63,15 @@ html{
     color: rgba(32, 41, 163, 0.537);
 }
 
-.save-tooltip,.copy-tooltip,.lock-unlock-tooltip{
+/* adding styles to tooltips */
+.save-tooltip,.copy-tooltip,.lock-unlock-tooltip{  
     position:relative;
     visibility: hidden;
     font-size: 1.2rem;
     margin: 0.5rem;
     z-index: 20;
 }
+
 .tooltip:hover .save-tooltip{
     background-color: black;
     border-radius:0.4rem ;
