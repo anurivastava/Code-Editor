@@ -22,14 +22,15 @@ html{
 }
 
 .code-container{
+    display: flex;
     font-size: large;
     margin: 1rem;
     color: wheat;
     resize: none;
-    /* width: 148.5rem; */
-    max-width: 148.5rem;
-    /* height: 57rem; */
-    max-height: 57rem;
+    width: 148.5rem;
+    /* max-width: 148.5rem; */
+    height: 57rem;
+    /* max-height: 57rem; */
     border: solid black 0.2rem;
     border-radius: 1rem;
     background-color:rgb(49, 47, 47);
