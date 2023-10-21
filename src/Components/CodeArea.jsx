@@ -54,7 +54,13 @@ const CodeArea = () => {
     const handleCopy=()=>{
        
         txtarea.current.select();
-        navigator.clipboard.writeText(txtarea.current.value);
+        if(txtarea.current.value!==''){
+            navigator.clipboard.writeText(txtarea.current.value);
+            alert('code copied')
+        }
+        else{
+            alert('please write some code first')
+        }
     }
 
     const handlekeydown=(event)=>{
