@@ -43,6 +43,7 @@ html{
     width: 40rem;
     margin: 1rem;
     padding-left: 0.5rem;
+    z-index: 1;
 }
 
 .save-btn,.copy-btn,.lock-unlock-btn{
@@ -63,27 +64,29 @@ html{
 }
 
 .save-tooltip,.copy-tooltip,.lock-unlock-tooltip{
+    position:relative;
     visibility: hidden;
     font-size: 1.2rem;
     margin: 0.5rem;
+    z-index: 20;
 }
 .tooltip:hover .save-tooltip{
     background-color: black;
+    border-radius:0.4rem ;
     color: white;
     visibility: visible;
-    z-index: 2;
 }
 
 .tooltip:hover .copy-tooltip{
     background-color: black;
+    border-radius:0.4rem ;
     color: white;
     visibility: visible;
-    z-index: 2;
 }
 
 .tooltip:hover .lock-unlock-tooltip{
     background-color: black;
+    border-radius:0.4rem ;
     color: white;
     visibility: visible;
-    z-index: 2;
 }
